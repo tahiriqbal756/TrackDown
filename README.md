@@ -1,46 +1,99 @@
+# TrackDown by trhacknon
 
+![TrackDown](https://static-trkn.replit.app/trkn.svg) <!-- (Ajoutez votre logo ici si possible) -->
 
-<p align='center'><img style="height:100px;width:100px" src="icon.png" ></p>
+## 🚀 Introduction
 
+**TrackDown** est un outil puissant et flexible permettant de traquer des utilisateurs via des liens générés dynamiquement. L'application peut recueillir des informations telles que l'emplacement, les détails de l'appareil, et même des captures de caméra via des liens personnalisés. 
 
-<h2 align='center'>Track Down people by just using a link.</h2>
+### Fonctionnalités principales :
+- 🌐 Génération de liens personnalisés pour collecter des informations.
+- 📍 Suivi de la localisation en temps réel.
+- 🎥 Captures de caméra.
+- ☁️ Deux types de pages : 
+  - Cloudflare (page sous attaque)
+  - WebView (affiche un site dans un iframe).
 
-<div align="center">
+## 📋 Prérequis
 
-</div>
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Node.js et npm installés.
+- Un bot Telegram et son **token**.
+- Un compte sur Replit, Glitch, ou Render pour héberger l'outil.
 
-This tool is based upon [Psi](https://github.com/Th30neAnd0nly/Psi) .This is a telegram implementation with extra features than Psi.
+## ⚙️ Installation et configuration
 
+### Étape 1 : Clonez le projet
+Clonez ce dépôt Git sur votre machine locale :
 
-[![Run on Repl.it](https://repl.it/badge/github/Th30neAnd0nly/TrackDown)](https://repl.it/github/Th30neAnd0nly/TrackDown)
- 
-#### Video Tutorial 
+```bash
+git clone https://github.com/tucommenceapousser/TrackDownV2.git
+cd TrackDownV2
+```
 
-[![Video Tutorial](https://github.com/Th30neAnd0nly/TrackDown/blob/main/vid.png)](https://github.com/Th30neAnd0nly/TrackDown/blob/main/vid.mp4?raw=true)
+### Étape 2 : Installez les dépendances
+Une fois dans le dossier du projet, installez toutes les dépendances nécessaires en exécutant :
 
-**Make sure you put `bot` as the secret's key , it's case sensitive.**
+```bash
+npm install
+```
 
+### Étape 3 : Configurez les variables d'environnement
+Dans la racine du projet, créez un fichier `.env` avec les variables suivantes :
 
-### How to build
-1. Create a telegram bot through [BotFather](https://t.me/BotFather).
-1. Copy it's API key
-1. Clone the repo using `git clone https://github.com/Th30neAnd0nly/TrackDown`
-1. `cd TrackDown`
-1. Create a environment variable in `.env` file named `bot` and put your telegram bot token as it's value.
-1. Replace your website URL at [index.js](https://github.com/Th30neAnd0nly/TrackDown/blob/8d2b963bc96d34282589d47240a9db56b5ce79f5/index.js#L15)
-1. Run `npm install`
-1. Afterwards `npm start`
-1. Your Bot is now online.
+```env
+SERVER_URL=http://votre-url-de-deploiement
+bot=VOTRE_TOKEN_TELEGRAM
+```
 
+- **SERVER_URL** : l'URL de votre serveur ou de l'instance déployée (Replit, Glitch, Render, etc.).
+- **bot** : le token de votre bot Telegram (obtenez-le via [BotFather](https://t.me/BotFather)).
 
+### Étape 4 : Lancer le serveur
+Une fois configuré, lancez le serveur avec :
 
-## DISCLAIMER
-<p align="center">
- TO BE USED FOR EDUCATIONAL PURPOSES ONLY
+```bash
+node index.js
+```
 
-</p>
+Le serveur sera accessible par défaut sur le port `5000`.
 
+## 📲 Déploiement en ligne
 
+Vous pouvez facilement déployer **TrackDown** en ligne sur Replit, Glitch, ou Render en utilisant les boutons suivants.
 
-The use of the PSI is COMPLETE RESPONSIBILITY of the END-USER. Developers assume NO liability and are NOT responsible for any misuse or damage caused by this program. Please read [LICENSE](LICENSE).
+### Replit
 
+[![Déployer sur Replit](https://replit.com/badge/github/tucommenceapousser/TrackDownV2)](https://replit.com/github/tucommenceapousser/TrackDownV2)
+
+### Glitch
+
+[![Déployer sur Glitch](https://glitch.com/edit/#!/import/github/tucommenceapousser/TrackDownV2)](https://glitch.com/edit/#!/import/github/tucommenceapousser/TrackDownV2)
+
+### Render
+
+[![Déployer sur Render](https://render.com/deploy?repo=https://github.com/tucommenceapousser/TrackDownV2)](https://render.com/deploy?repo=https://github.com/tucommenceapousser/TrackDownV2)
+
+## 🔧 Personnalisation
+
+Vous pouvez personnaliser les comportements de l'application en modifiant certaines variables d'environnement dans le fichier `.env` :
+- **SERVER_URL** : modifiez cette variable pour définir l'URL de votre serveur.
+- **bot** : ajoutez le token de votre bot Telegram pour gérer les interactions.
+
+## 🤖 Utilisation du bot Telegram
+
+1. Lancez le bot en envoyant `/start`.
+2. Utilisez `/create` pour générer de nouveaux liens de traçage.
+3. Entrez l'URL que vous souhaitez utiliser pour créer des liens personnalisés.
+4. Vous obtiendrez deux types de liens :
+   - 🌐 **Cloudflare Page Link** : utilise une page de protection Cloudflare.
+   - 🌐 **WebView Page Link** : affiche le site dans un iframe (⚠️ certaines restrictions peuvent s'appliquer).
+
+### Commandes importantes :
+- `/start` : pour démarrer l'interaction avec le bot.
+- `/create` : pour générer un nouveau lien.
+- `/help` : obtenir de l'aide sur l'utilisation du bot.
+
+## 📄 Licence
+
+Ce projet est sous licence [MIT](LICENSE).
