@@ -11,7 +11,7 @@
 - 📍 Suivi de la localisation en temps réel.
 - 🎥 Captures de caméra.
 - ☁️ Deux types de pages : 
-  - Cloudflare (page sous attaque)
+  - Cloudflare (page sous attaque).
   - WebView (affiche un site dans un iframe).
 
 ## 📋 Prérequis
