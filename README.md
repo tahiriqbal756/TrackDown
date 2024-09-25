@@ -94,6 +94,9 @@ Vous pouvez personnaliser les comportements de l'application en modifiant certai
 - `/create` : pour générer un nouveau lien.
 - `/help` : obtenir de l'aide sur l'utilisation du bot.
 
+## THX TO Th30neAnd0nly for the good base
+**https://github.com/Th30neAnd0nly/TrackDown**
+
 ## 📄 Licence
 
 Ce projet est sous licence [MIT](LICENSE).
