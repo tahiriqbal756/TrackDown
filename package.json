@@ -1,5 +1,5 @@
 {
-  "name": "TrackDown",
+  "name": "HACKER TF",
   "version": "1.0.0",
   "description": "Track Down People just through a link",
   "main": "index.js",
@@ -9,8 +9,8 @@
    },
   "keywords": [],
   "author": {
-   "name" : "Prateek Chaubey",
-   "url" : "https://git.io/prateek"
+   "name" : "HACKER TF",
+   "url" : "hacker_tf_hacking_master"
   },
   "license": "MIT",
   "dependencies": {
